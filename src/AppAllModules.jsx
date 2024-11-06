@@ -1,10 +1,12 @@
-import { RouterProvider } from "react-router-dom";
-//import  SecurityRouter from "./navigation/NaviRoutesSecurity";
-//import  EducationRouter from "./navigation/NaviRoutesEducation";
-import  CommerceRouter from "./navigation/NaviRoutesCommerce";
-import Footer from "./share/footer/components/Footer";
-import { createBrowserRouter } from "react-router-dom";
-export default function AppAllModules() {
+import { RouterProvider } from 'react-router-dom';
+//import SecurityRouter from "./navigation/NaviRoutesSecurity"; // Importar el módulo de seguridad
+// import EducationRouter from "./navigation/NaviRoutesEducation"; // Importar el módulo de educación
+ import CommerceRouter from "./navigation/NaviRoutesCommerce"; // Importar el módulo de comercio
+import Footer from './share/footer/components/Footer'; // Asegúrate de que la ruta sea correcta
+
+function AppAllModules() {
+    //FIC: En este ejemplo solo estamos habilitando 
+    //el modulo de Seguridad para su ejecución.
     return (
         <>
             <div id='div-app'>
@@ -13,6 +15,8 @@ export default function AppAllModules() {
                     <Footer />
                 </div>
             </div>
-        </> 
+        </>
     );
 }
+
+export default AppAllModules;
